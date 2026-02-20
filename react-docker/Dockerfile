@@ -17,7 +17,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Kailangan ng admin powers para mag-ayos ng permissions
-USER root
+    USER root
 
 # Siguraduhin natin na may access si app user sa folder niya
 RUN chown -R app:app .
